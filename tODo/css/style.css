@@ -1,0 +1,235 @@
+/* 
+#001C30
+#83919B
+#64CCC5
+#DAFFFB
+
+*/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* General */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  color: #fff;
+  background-color: #001C30;
+}
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-todo {
+  position: absolute;
+  top: 40rem;
+  font-size: 48rem;
+  font-weight: 800;
+  opacity: 6%;
+}
+
+/* Main */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 3.6rem;
+}
+
+.main-header::after {
+  content: 'the best way tO Do your tasks.';
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78.3rem;
+  height: 50.9rem;
+  margin: 0 auto;
+  background-color: #DAFFFB;
+}
+
+.tag-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffffc8;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 25%;
+}
+
+.header-text-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54.5rem;
+  height: 3.2rem;
+  background-color: #001C30
+}
+
+.text-bar {
+  font-size: 1.4rem;
+  color: #DAFFFB;
+}
+
+.header-qoute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  color:#001C30;
+  font-size: 1.8rem;
+}
+
+.header-qoute::after {
+  content: '- Mark Twin';
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 65%;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  background-color: #64ccc556;
+  z-index: 10;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  padding-top: 1rem;
+}
+
+.ol {
+  list-style: none;
+  width: 54.5rem;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+  margin-top: 0.4rem;
+  border: solid 2px #64CCC5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #001C30;
+  background-color: #DAFFFB;
+  transition: all 0.3s;
+}
+
+.task-btn-container {
+  padding: 0.5rem;
+}
+
+.btn-remove {
+  font-size: 1.2rem;
+  color: #001c3058;
+  transition: all 0.3s;
+}
+
+.btn-remove:hover {
+  cursor: pointer;
+  color: rgb(230, 46, 46);
+  opacity: 100%;
+}
+
+.btn-check {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #001c306e;
+  transition: color 0.3s;
+}
+
+.btn-check:hover{
+  color: #001C30;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 20%;
+}
+
+.input {
+  all: unset;
+  width: 51.3rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: #001C30;
+}
+
+.input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  color: #dafffb87;
+}
+
+.add-btn {
+  all: unset;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #001c30c2;
+  transition: all 0.3s ;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  font-weight: 600;
+  color: #001C30;
+}
+
+/* Utilities */
+.primary-radius {
+  border-radius: 25px
+}
+
+.margin-right--sm {
+  margin-right: 1rem;
+}
